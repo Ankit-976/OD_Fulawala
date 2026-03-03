@@ -1,0 +1,7 @@
+export { default as flower } from "./flowers.png";
+export { default as sun } from "./sun.png";
+export { default as tag } from "./tag.png";
+export { default as kalash } from "./kalash.png";
+export { default as subscribe } from "./subscribe.png";
+export { default as flowerBasket } from "./flower-basket.png";
+export { default as delivery } from "./express-delivery.png";
