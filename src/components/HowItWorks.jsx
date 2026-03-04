@@ -47,7 +47,7 @@ const HowItWorks = () => {
             title: "Delivered Before 8 AM Daily",
         }
     ]
-
+    
     gsap.registerPlugin(ScrollTrigger);
 
     const featureSectionRef = useRef();
@@ -57,18 +57,50 @@ const HowItWorks = () => {
             ".feature-card",
             { y: 50, opacity: 0 },
             {
-            y: 0,
-            opacity: 1,
-            duration: 0.9,
-            stagger: 0.2,
-            ease: "power3.out",
-            scrollTrigger: {
-                trigger: featureSectionRef.current,
-                start: "top 40%",
-                toggleActions: "play reverse play reverse",
-            },
+                y: 0,
+                opacity: 1,
+                duration: 0.9,
+                // stagger: 0.2,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: featureSectionRef.current,
+                    start: "top 60%",
+                    toggleActions: "play reverse play reverse",
+                },
             }
         );
+        gsap.fromTo(
+            ".workingText",
+            { opacity: 0 },
+            {
+                opacity: 1,
+                duration: 1,
+                // delay: -1,
+                duration: 0.9,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: featureSectionRef.current,
+                    start: "top 35%",
+                    toggleActions: "play reverse play reverse",
+                },
+            }
+        );
+        gsap.fromTo(
+            ".working-Cards",
+            { opacity: 0 },
+            {
+                opacity: 1,
+                stagger: 0.5,
+                // delay: 1.1,
+                duration: 3,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: featureSectionRef.current,
+                    start: "top 30%",
+                    toggleActions: "play reverse play reverse",
+                },
+            }
+        )
     }, { scope: featureSectionRef });  
 
   return (
@@ -80,7 +112,7 @@ const HowItWorks = () => {
             })}     
         </div>
         <div className="text-center flex flex-col gap-3">
-            <h1 className="text-2xl font-semibold" style={{fontFamily:"var(--font-heading)"}}>How It Works</h1>
+            <h1 className="workingText text-2xl font-semibold" style={{fontFamily:"var(--font-heading)"}}>How It Works</h1>
             <div className="flex justify-center gap-15">
                 {working.map((item) => {
                     return <TransparentCard image={item.image} title={item.title} key={item.id} id={item.id}/>
