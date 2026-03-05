@@ -1,16 +1,121 @@
-# React + Vite
+# 🌼 OD Fulawala — Flower Delivery Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern responsive website for a **daily pooja flower delivery service**.
+Customers can subscribe to receive **fresh flowers delivered to their doorstep before 8 AM every morning**.
 
-Currently, two official plugins are available:
+This project was built using **React, Tailwind CSS, and GSAP** with a focus on smooth UI, responsive design, and clean component structure.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Live Website
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 **Live Demo:** https://od-fulawala.vercel.app/
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+* 🌼 Beautiful hero section with spiritual flower imagery
+* 📦 Monthly flower subscription plans
+* 📱 Fully responsive design (mobile, tablet, desktop)
+* ⚡ Smooth animations using GSAP
+* 🎨 Clean UI built with Tailwind CSS
+* 🧩 Reusable React components
+* 🚀 Fast deployment using Vercel
+
+---
+
+## 🛠 Tech Stack
+
+* **React**
+* **Tailwind CSS**
+* **GSAP**
+* **Vite**
+* **JavaScript (ES6+)**
+
+---
+
+## 📂 Project Structure
+
+```
+src
+ ├── assets
+ │    └── icons
+ │
+ ├── components
+ │    ├── Button.jsx
+ │    ├── Card.jsx
+ │    ├── Hero.jsx
+ │    ├── HowItWorks.jsx
+ │    ├── NavBar.jsx
+ │
+ ├── App.jsx
+ ├── main.jsx
+ └── index.css
+```
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```
+git clone https://github.com/Ankit-976/OD_Fulawala.git
+```
+
+Navigate to the project folder:
+
+```
+cd od-flowers
+```
+
+Install dependencies:
+
+```
+npm install
+```
+
+Run the development server:
+
+```
+npm run dev
+```
+
+---
+
+## 📦 Build for Production
+
+```
+npm run build
+```
+
+---
+
+## 🌐 Deployment
+
+The website is deployed using **Vercel**.
+
+You can deploy it by connecting the GitHub repository to Vercel.
+
+---
+
+## 🎯 Future Improvements
+
+* Online payment integration
+* User subscription dashboard
+* Order tracking system
+* Admin panel for managing deliveries
+
+---
+
+## 👨‍💻 Author
+
+**Ankit Basa**
+
+BCA Student
+Government Autonomous College, Rourkela
+
+---
+
+⭐ If you like this project, feel free to give it a star!
