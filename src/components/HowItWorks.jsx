@@ -105,8 +105,8 @@ const HowItWorks = () => {
 
   return (
     <>
-    <div  className="flex h-fit flex-col gap-20 lg:pt-30 py-20 lg:px-25" style={{fontFamily:"var(--font-body)"}}>
-        <div className="lg:h-[35%] px-5 gap-8 grid grid-cols-2 lg:flex lg:justify-evenly lg:flex-wrap">
+    <div  className="flex h-fit flex-col gap-20 lg:pt-30 py-20 lg:px-" style={{fontFamily:"var(--font-body)"}}>
+        <div className="lg:h-[35%] px-4 md:px-30 gap-10 lg:gap-0 grid grid-cols-2 lg:flex lg:justify-evenly lg:px-0">
             {features.map((item) => {
                 return <Card image={item.image} title={item.title} key={item.id} />
             })}     
