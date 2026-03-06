@@ -5,3 +5,5 @@ export { default as kalash } from "./kalash.png";
 export { default as subscribe } from "./subscribe.png";
 export { default as flowerBasket } from "./flower-basket.png";
 export { default as delivery } from "./express-delivery.png";
+export { default as menu } from "./menu-3-line.svg";
+export { default as close } from "./close-fill.svg";

@@ -1,10 +1,10 @@
 import Card from "./Card"
 import { flower, sun, tag, kalash, subscribe, flowerBasket, delivery } from "../assets/icons/icons";
 import TransparentCard from "./TransparentCard";
-// import { useRef } from "react";
-// import { useGSAP } from "@gsap/react";
-// import gsap from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
 const HowItWorks = () => {
@@ -48,65 +48,64 @@ const HowItWorks = () => {
         }
     ]
     
-    // gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger);
 
-    // const featureSectionRef = useRef();
+    const featureSectionRef = useRef();
 
-    // useGSAP(() => {
-    //     gsap.fromTo(
-    //         ".feature-card",
-    //         { y: 50, opacity: 0 },
-    //         {
-    //             y: 0,
-    //             opacity: 1,
-    //             duration: 0.9,
-    //             // stagger: 0.2,
-    //             ease: "power3.out",
-    //             scrollTrigger: {
-    //                 trigger: featureSectionRef.current,
-    //                 start: "top 60%",
-    //                 toggleActions: "play reverse play reverse",
-    //             },
-    //         }
-    //     );
-    //     gsap.fromTo(
-    //         ".workingText",
-    //         { opacity: 0 },
-    //         {
-    //             opacity: 1,
-    //             duration: 1,
-    //             // delay: -1,
-    //             duration: 0.9,
-    //             ease: "power3.out",
-    //             scrollTrigger: {
-    //                 trigger: featureSectionRef.current,
-    //                 start: "top 35%",
-    //                 toggleActions: "play reverse play reverse",
-    //             },
-    //         }
-    //     );
-    //     gsap.fromTo(
-    //         ".working-Cards",
-    //         { opacity: 0 },
-    //         {
-    //             opacity: 1,
-    //             stagger: 0.5,
-    //             // delay: 1.1,
-    //             duration: 3,
-    //             ease: "power3.out",
-    //             scrollTrigger: {
-    //                 trigger: featureSectionRef.current,
-    //                 start: "top 30%",
-    //                 toggleActions: "play reverse play reverse",
-    //             },
-    //         }
-    //     )
-    // }, { scope: featureSectionRef });  ref={featureSectionRef}
-
+    useGSAP(() => {
+        gsap.fromTo(
+            ".feature-card",
+            { y: 50, opacity: 0 },
+            {
+                y: 0,
+                opacity: 1,
+                duration: 0.9,
+                // stagger: 0.2,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: featureSectionRef.current,
+                    start: "top 60%",
+                    toggleActions: "play reverse play reverse",
+                },
+            }
+        );
+        gsap.fromTo(
+            ".workingText",
+            { opacity: 0 },
+            {
+                opacity: 1,
+                duration: 1,
+                // delay: -1,
+                duration: 0.9,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: featureSectionRef.current,
+                    start: "top 35%",
+                    toggleActions: "play reverse play reverse",
+                },
+            }
+        );
+        gsap.fromTo(
+            ".working-Cards",
+            { opacity: 0 },
+            {
+                opacity: 1,
+                stagger: 0.5,
+                // delay: 1.1,
+                duration: 3,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: featureSectionRef.current,
+                    start: "top 30%",
+                    toggleActions: "play reverse play reverse",
+                },
+            }
+        )
+    }, { scope: featureSectionRef });  
   return (
     <>
-    <div  className="flex h-fit flex-col gap-20 lg:pt-30 py-20 lg:px-" style={{fontFamily:"var(--font-body)"}}>
-        <div className="lg:h-[35%] px-4 md:px-30 gap-10 lg:gap-0 grid grid-cols-2 lg:flex lg:justify-evenly lg:px-0">
+    <div ref={featureSectionRef} className='ref={featureSectionRef} flex h-fit flex-col gap-20 lg:pt-30 py-20' style={{fontFamily:"var(--font-body)"}}>
+        <div className="lg:h-[35%] px-4 sm:px-30 md:px-30 gap-10 lg:gap-0 grid grid-cols-2 lg:flex lg:justify-evenly lg:px-0">
             {features.map((item) => {
                 return <Card image={item.image} title={item.title} key={item.id} />
             })}     
