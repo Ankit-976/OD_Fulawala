@@ -59,13 +59,13 @@ const HowItWorks = () => {
             {
                 y: 0,
                 opacity: 1,
-                duration: 0.9,
+                duration: 0.1,
                 // stagger: 0.2,
                 ease: "power3.out",
                 scrollTrigger: {
                     trigger: featureSectionRef.current,
                     start: "top 60%",
-                    toggleActions: "play reverse play reverse",
+                    scrub:true
                 },
             }
         );
@@ -81,7 +81,7 @@ const HowItWorks = () => {
                 scrollTrigger: {
                     trigger: featureSectionRef.current,
                     start: "top 35%",
-                    toggleActions: "play reverse play reverse",
+                    scrub:2
                 },
             }
         );
@@ -90,14 +90,14 @@ const HowItWorks = () => {
             { opacity: 0 },
             {
                 opacity: 1,
-                stagger: 0.5,
+                // stagger: 0.5,
                 // delay: 1.1,
-                duration: 3,
+                duration: 2,
                 ease: "power3.out",
                 scrollTrigger: {
                     trigger: featureSectionRef.current,
                     start: "top 30%",
-                    toggleActions: "play reverse play reverse",
+                    scrub:2
                 },
             }
         )

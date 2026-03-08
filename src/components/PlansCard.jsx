@@ -13,7 +13,7 @@ const PlansCard = (props) => {
               return <li key={item.length}>✅{item}</li>
             })}
           </ul>
-          <Button message="Subscribe" plan={props.price}/>
+          <Button message="Subscribe" plan={props.price} name={props.name}/>
     </div>
   )
 }
