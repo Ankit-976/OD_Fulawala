@@ -12,7 +12,7 @@ const Hero = () => {
             <p className='lg:text-xl xl:text-2xl text-xl' style={{fontFamily: "var(--font-body)"}}>
               Ensure Your Daily Prayers are Blessed with Fresh Flowers. Your Monthty Subscription Ensures an Automatic Pooja Flower Delivery at Your Doorstep. Rain Or Shine.Early Every Morning.
             </p>
-            <Button message={btn}/>
+            <Button message={btn}  goToPlans="goToPlans"/>
         </div>
     </div>
   )

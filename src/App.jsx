@@ -5,6 +5,7 @@ import HowItWorks from './components/HowItWorks'
 import Plans from './components/Plans'
 import Footer from './components/Footer'
 import Lenis from 'lenis'
+import 'remixicon/fonts/remixicon.css'
 
 function App() {
 
