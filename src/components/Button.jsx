@@ -5,7 +5,7 @@ const Button = (props) => {
   let color = "bg-[#DD721D]"
   let icon = "";
   if(props.color == "#3AA658"){
-    color = `bg-[${props.color}]`
+    color = `bg-[#3AA658]`
     icon = <i className="ri-whatsapp-line text-xl font-normal"></i>;
   }
   if(props.plan){
