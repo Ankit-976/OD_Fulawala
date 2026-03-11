@@ -69,42 +69,42 @@ const HowItWorks = () => {
                 },
             }
         );
-        gsap.fromTo(
-            ".workingText",
-            { opacity: 0 },
-            {
-                opacity: 1,
-                duration: 1,
-                // delay: -1,
-                duration: 0.9,
-                ease: "power3.out",
-                scrollTrigger: {
-                    trigger: featureSectionRef.current,
-                    start: "top 35%",
-                    scrub:2
-                },
-            }
-        );
-        gsap.fromTo(
-            ".working-Cards",
-            { opacity: 0 },
-            {
-                opacity: 1,
-                // stagger: 0.5,
-                // delay: 1.1,
-                duration: 2,
-                ease: "power3.out",
-                scrollTrigger: {
-                    trigger: featureSectionRef.current,
-                    start: "top 30%",
-                    scrub:2
-                },
-            }
-        )
+        // gsap.fromTo(
+        //     ".workingText",
+        //     { opacity: 0 },
+        //     {
+        //         opacity: 1,
+        //         duration: 1,
+        //         // delay: -1,
+        //         duration: 0.9,
+        //         ease: "power3.out",
+        //         scrollTrigger: {
+        //             trigger: featureSectionRef.current,
+        //             start: "top 35%",
+        //             scrub:2
+        //         },
+        //     }
+        // );
+        // gsap.fromTo(
+        //     ".working-Cards",
+        //     { opacity: 0 },
+        //     {
+        //         opacity: 1,
+        //         // stagger: 0.5,
+        //         // delay: 1.1,
+        //         duration: 2,
+        //         ease: "power3.out",
+        //         scrollTrigger: {
+        //             trigger: featureSectionRef.current,
+        //             start: "top 30%",
+        //             scrub:2
+        //         },
+        //     }
+        // )
     }, { scope: featureSectionRef });  
   return (
     <>
-    <div ref={featureSectionRef} className='ref={featureSectionRef} flex h-fit flex-col gap-20 lg:pt-30 py-20' style={{fontFamily:"var(--font-body)"}}>
+    <div ref={featureSectionRef} className='ref={featureSectionRef} flex h-fit flex-col gap-20 lg:pt-30 py-20 md:py-35' id="features" style={{fontFamily:"var(--font-body)"}}>
         <div className="lg:h-[35%] px-4 sm:px-30 md:px-30 gap-10 lg:gap-0 grid grid-cols-2 lg:flex lg:justify-evenly lg:px-0">
             {features.map((item) => {
                 return <Card image={item.image} title={item.title} key={item.id} />

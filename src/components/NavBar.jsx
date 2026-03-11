@@ -11,7 +11,7 @@ const NavBar = () => {
     lenis.scrollTo(`#${section}`, {
       duration: 2,
       easing: (t) => 1 - Math.pow(1 - t, 3),
-      offset: -80,
+      offset: -55,
     });
   };
 
@@ -58,6 +58,13 @@ const NavBar = () => {
           className="group list-none hidden md:flex flex-col"
         >
           Home
+          <span className="h-0.5 rounded-4xl w-0 group-hover:w-11 transition-all duration-500 ease-out bg-[#DD721D] block"></span>
+        </li>
+        <li
+          onClick={() => scrollTo("features")}
+          className="group list-none hidden md:flex flex-col"
+        >
+          Features 
           <span className="h-0.5 rounded-4xl w-0 group-hover:w-11 transition-all duration-500 ease-out bg-[#DD721D] block"></span>
         </li>
         <li
