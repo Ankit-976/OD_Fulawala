@@ -36,7 +36,7 @@ const Plans = () => {
 ];
 
   return (
-    <div className='h-fit pt-10'>
+    <div className='h-fit pt-10' id='plans'>
       <h3 className='text-center text-3xl' style={{fontFamily:"var(--font-heading)"}}>Choose Your Plan</h3>
       <div className='lg:py-15 py-10 sm:px-10 flex justify-evenly gap-15 sm:gap-10 lg:gap-0 flex-wrap '>
         {plans.map((item) =>{

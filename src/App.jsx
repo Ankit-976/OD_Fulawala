@@ -7,11 +7,13 @@ import Footer from './components/Footer'
 import Lenis from 'lenis'
 import 'remixicon/fonts/remixicon.css'
 
+export let lenis;
+
 function App() {
 
   useEffect(() => {
         // Initialize Lenis
-    const lenis = new Lenis();
+    lenis = new Lenis();
 
     // Use requestAnimationFrame to continuously update the scroll
     function raf(time) {
