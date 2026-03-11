@@ -2,6 +2,7 @@ import React from "react";
 import Button from "./Button";
 
 const Footer = () => {
+
   return (
     <div className="h-fit flex flex-col items-center text-center bg-[#f8e3c0]">
       <div className="lg:flex lg:py-5">
@@ -20,7 +21,9 @@ const Footer = () => {
           </p>
           <ul className="flex gap-5 justify-center">
             <li>
+              <a href={`https://wa.me/6372475659`} target="_blank" rel="noopener noreferrer">
               <i className="ri-whatsapp-line text-4xl cursor-pointer"></i>
+              </a>
             </li>
             <li>
               <i className="ri-instagram-line text-4xl cursor-pointer"></i>

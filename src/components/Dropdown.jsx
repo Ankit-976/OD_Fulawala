@@ -4,7 +4,7 @@ import { close } from "../assets/icons/icons";
 const Dropdown = (props) => {
   const scrollTo = (section) => {
     lenis.scrollTo(`#${section}`, {
-      duration: 2,
+      duration: 1.5,
       easing: (t) => 1 - Math.pow(1 - t, 3),
     });
   };
