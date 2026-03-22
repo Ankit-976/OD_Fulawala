@@ -111,7 +111,7 @@ const HowItWorks = () => {
             })}     
         </div>
         <div className="text-center flex flex-col lg:gap-3">
-            <h1 className="workingText lg:text-2xl text-xl font-semibold" style={{fontFamily:"var(--font-heading)"}}>How It Works</h1>
+            <h1 className="workingText lg:text-2xl text-3xl font-semibold" style={{fontFamily:"var(--font-heading)"}}>How It Works</h1>
             <div className="flex justify-center flex-wrap lg:gap-15 gap-10 px-10">
                 {working.map((item) => {
                     return <TransparentCard image={item.image} title={item.title} key={item.id} id={item.id}/>

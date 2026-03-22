@@ -1,4 +1,4 @@
-import React from 'react'
+const phone = import.meta.env.VITE_PHONE_NUMBER
 
 const Button = (props) => {
   let message = "Hey, I want to know more about the plans...";
@@ -13,7 +13,7 @@ const Button = (props) => {
   }
   return (
     <>
-    <a href = {`https://wa.me/6372475659?text=${encodeURIComponent(message)}`} target = "_blank" rel="noopener noreferrer">
+    <a href = {`https://wa.me/${phone}?text=${encodeURIComponent(message)}`} target = "_blank" rel="noopener noreferrer">
     <button 
     className={`${color} py-2 px-5 rounded-4xl gap-2 flex cursor-pointer w-fit font-semibold text-white`} >
         {icon}{props.message}
