@@ -9,7 +9,7 @@ This project was built using **React, Tailwind CSS, and GSAP** with a focus on s
 
 ## 🚀 Live Website
 
-🔗 **Live Demo:** https://od-fulawala.vercel.app/
+🔗 **Live Link: ** https://od-fulawala.vercel.app/
 
 ---
 
